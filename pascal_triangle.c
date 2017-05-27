@@ -2,7 +2,7 @@
 
  int main()
 {
-    int n, coef,space, i, j;
+    unsigned long int n, coef,space, i, j;
 
     printf("Enter number of rows: ");
     scanf("%d",&n);
@@ -19,7 +19,7 @@
             else
                 coef=coef*(i-j+1)/j;
 
-            printf("%d ",coef);
+            printf("%ld ",coef);
         }
         printf("\n");
     }
