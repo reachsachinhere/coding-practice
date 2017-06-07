@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 int largest_palindrome( int n);
 int ispalindrome(int a);
 int main()
