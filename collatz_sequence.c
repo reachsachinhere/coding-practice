@@ -14,14 +14,14 @@ Which starting number, under one million, produces the longest chain?*/
 
 int main() 
 {
-     long long int i, n, k, p = 0, max = 1, q=1;
-     printf( "Enter the number of terms : " );   
+     long long int i, n, k, p = 0, max = 1, q=1; //max-the number of steps in the chain, q-the number with greatest max
+     printf( "Enter a number: " );               //n-the bound upto which we have to check every number's sequence 
      scanf( "%lld", &n );
-     for( i = 2; i <= n; i++ )
+     for( i = 2; i <= n; i++ )                  //a for loop to check sequence of every no from 2-n                   
         {
           k=i;
           p=0;
-          while( k != 1 )
+          while( k != 1 )                       //a while loop to calculate the number of steps(variable p) in a c sequence of a no  
                {
                  if(k%2==0)
                     k=k/2;
@@ -31,7 +31,7 @@ int main()
                  p++;
                }
         
-          if( p > max )
+          if( p > max )                        
             {
               max=p;
               q=i;
@@ -39,7 +39,7 @@ int main()
               
         }
       
-     printf( "%lld %lld", max+1, q );
+     printf( "%lld %lld", max+1, q );      //as the no of terms is 1 more than the no steps so it is max+1
      return 0;
 }   
  
