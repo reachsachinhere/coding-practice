@@ -7,7 +7,7 @@ int main()
     printf ( "enter the number" );
     scanf ( "%d" , &n );
  
-    for ( i = 2; i <= n; i++ )    //if n is a sum of two primes then i and n-i, both should be prime. 
+    for ( i = 2; i <= n / 2; i++ )    //if n is a sum of two primes then i and n-i, both should be prime. 
         {                         
           p = 0;
           q = 0;
